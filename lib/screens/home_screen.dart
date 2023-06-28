@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:chat_app/models/chat_user.dart';
+import 'package:chat_app/screens/profile_screen.dart';
 import 'package:chat_app/widgets/chat_user_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +29,9 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text("Sabo Chat"),
         actions: [
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+          IconButton(onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (_) => ProfileScreen(user: list[0],)));
+          }, icon: Icon(Icons.more_vert)),
         ],
       ),
       floatingActionButton: Padding(
