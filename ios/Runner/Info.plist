@@ -61,5 +61,8 @@
     	</dict>
     </array>
     <!-- End of the Google Sign-in Section -->
+
+   <key>NSPhotoLibraryUsageDescription</key>
+   <string>This is called Privacy - Photo Library Usage Description in the visual editor</string>
 </dict>
 </plist>
